@@ -12,7 +12,8 @@
 
 .main {
   font-family: "Space Grotesk", sans-serif;
-  padding: 3em 10em;
+  max-width: 90em;
+  padding: 3em 2em;
 }
 
 .title {
