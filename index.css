@@ -1,0 +1,95 @@
+:root {
+  --primary-color: yellow;
+  --black: black;
+  --white: white;
+  --grey: grey;
+
+  --title-font-size: 3.5em;
+  --subtitle-font-size: 2em;
+  --body-font-size: 1.5em;
+  --caption-font-size: 0.8em;
+}
+
+.main {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 3em 10em;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  color: var(--black);
+}
+
+.actions {
+  display: inline-flex;
+  margin-left: 0.1em;
+  align-items: center;
+}
+
+.action {
+  margin: 0.1em;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.section {
+}
+
+.subtitle {
+  font-size: var(--subtitle-font-size);
+  color: var(--black);
+}
+
+.list {
+  list-style-type: "☞";
+}
+
+.item {
+  font-size: var(--body-font-size);
+  width: fit-content;
+  margin: 0.5em;
+  padding: 0.5em;
+
+  transition: font-size ease-in-out 0.05s;
+}
+
+.item:hover {
+  font-size: 1.7em;
+}
+
+.item-text {
+  color: var(--grey);
+  margin: 0 0.5em;
+}
+
+.item:hover .item-text {
+  color: var(--black);
+}
+
+.item-caption {
+  display: inline;
+  opacity: 0;
+  margin-left: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: var(--caption-font-size);
+  color: var(--grey);
+  transition: opacity ease-out 0.25s;
+}
+
+@media only screen and (max-width: 50em) {
+  .item-caption {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+.item:hover .item-caption {
+  opacity: 1;
+  background-color: var(--primary-color);
+}
+
+.floating-link {
+  position: fixed;
+  top: 95vh;
+  right: 3vh;
+}
