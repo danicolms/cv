@@ -31,6 +31,13 @@
   margin: 0.1em;
   color: var(--grey);
   cursor: pointer;
+  background-color: transparent;
+  transition: background-color ease-in-out 0.2s;
+}
+
+.action:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
 }
 
 .subtitle {
@@ -40,6 +47,7 @@
 
 .list {
   list-style-type: "☞";
+  color: var(--black);
 }
 
 .item {
@@ -93,7 +101,7 @@
 
 .floating-link:hover {
   padding: 0.75em;
-  background-color: var(--black);
+  background-color: var(--primary-color);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
