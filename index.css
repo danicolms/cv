@@ -1,8 +1,8 @@
 :root {
-  --primary-color: yellow;
-  --black: black;
-  --white: white;
-  --grey: grey;
+  --primary-color: #6667ab;
+  --black: #3f3f3f;
+  --white: #fbfaf8;
+  --grey: #aaaaaa;
 
   --title-font-size: 3.5em;
   --subtitle-font-size: 2em;
@@ -13,7 +13,7 @@
 .main {
   font-family: "Space Grotesk", sans-serif;
   max-width: 90em;
-  padding: 3em 2em;
+  padding: 2.5em 1.5em;
 }
 
 .title {
@@ -33,9 +33,6 @@
   cursor: pointer;
 }
 
-.section {
-}
-
 .subtitle {
   font-size: var(--subtitle-font-size);
   color: var(--black);
@@ -51,7 +48,7 @@
   margin: 0.5em;
   padding: 0.5em;
 
-  transition: font-size ease-in-out 0.05s;
+  transition: font-size ease-in-out 0.08s;
 }
 
 .item:hover {
@@ -68,29 +65,47 @@
 }
 
 .item-caption {
-  display: inline;
-  opacity: 0;
+  display: none;
   margin-left: 0.25em;
   padding: 0.25em 0.5em;
   font-size: var(--caption-font-size);
-  color: var(--grey);
-  transition: opacity ease-out 0.25s;
-}
-
-@media only screen and (max-width: 50em) {
-  .item-caption {
-    display: block;
-    margin-left: 0;
-  }
+  color: var(--white);
+  border-radius: 0.25em;
 }
 
 .item:hover .item-caption {
-  opacity: 1;
+  display: inline;
   background-color: var(--primary-color);
 }
 
 .floating-link {
+  padding: 0.5em;
+  background-color: var(--grey);
+  color: var(--white);
+  border-radius: 0.5em;
   position: fixed;
-  top: 95vh;
+  top: 92vh;
   right: 3vh;
+  text-decoration: none;
+  transition: all ease-in-out 0.05s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.floating-link:hover {
+  padding: 0.75em;
+  background-color: var(--black);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media only screen and (max-width: 50em) {
+  .main {
+    font-family: "Space Grotesk", sans-serif;
+    max-width: 90em;
+    padding: 1em 0.5em;
+  }
+
+  .item-caption {
+    margin-left: 0;
+    padding: 0;
+  }
 }
