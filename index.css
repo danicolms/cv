@@ -101,11 +101,11 @@
   .main {
     font-family: "Space Grotesk", sans-serif;
     max-width: 90em;
-    padding: 1em 0.5em;
+    padding: 0.5em;
   }
 
   .item-caption {
     margin-left: 0;
-    padding: 0;
+    padding: 0.1em 0.25em;
   }
 }
