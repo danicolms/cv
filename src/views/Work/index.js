@@ -132,44 +132,44 @@ const cubeIcon = (
   </svg>
 );
 
-const companies = [
+const jobs = [
   {
     key: "redradix",
-    value: "RedRadix (2022-2023)",
+    value: "RedRadix ",
+    url: "https://www.redradix.com/",
+    category: "Full-stack developer (2022-2023)",
+    icon: ucIcon,
+  },
+  {
+    key: "uc",
+    value: "UNICAN - Master en tributación",
     url: "https://www.tributacion.unican.es/2023/",
+    category: "Wordpress developer (2023)",
     icon: ucIcon,
   },
   {
     key: "connect-health",
-    value: "ConnectHealth (2020-2022)",
-    url: "https://danicolms.github.io/word-clock/",
+    value: "ConnectHealth ",
+    category: "Full-stack developer (2020-2022)",
+    url: "https://connecthealth.info/",
     icon: wordClockIcon,
   },
   {
     key: "diatomea",
-    value: "Diatomea (2018-2020)",
-    url: "https://danicolms.github.io/rotating-box/",
+    value: "Diatomea",
+    url: "https://www.diatomea.tech/",
+    category: "Full-stack developer (2018-2020)",
     icon: cubeIcon,
   },
 ];
 
-const freelance = [
-  {
-    key: "uc",
-    value: "UNICAN",
-    url: "https://www.tributacion.unican.es/2023/",
-    icon: ucIcon,
-  },
-];
+const freelance = [];
 
 const Work = () => {
   return (
     <Fragment>
-      <Title> Companies </Title>
-      <List items={companies} />
-      <br />
-      <Title> Freelance work </Title>
-      <List items={freelance} />
+      <Title> My jobs </Title>
+      <List items={jobs} />
     </Fragment>
   );
 };
