@@ -2,13 +2,23 @@ import React, { Fragment } from "react";
 
 import { Title } from "../../components";
 
+import "./styles.css";
+
 const Landing = () => {
   return (
     <div className="landing__container">
       <Title> Hello! </Title>
       <div className="content__container">
         <p>
-          I'm <b>Dani</b>, a full-stack developer based in Santander, Spain.
+          I'm{" "}
+          <a
+            className="me"
+            href="https://danicolms.github.io/portfolio/"
+            target="_blank"
+          >
+            <b>Dani</b>
+          </a>
+          , a full-stack developer based in Santander, Spain.
         </p>
         <br />
         <p>
