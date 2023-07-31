@@ -1,6 +1,6 @@
 # My CV
 
-[![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/danicolms/cv/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/danicolms/cv/blob/main/LICENSE)
 
 Welcome to my cv repository! This project showcases my education and work history. The cv is built using React and bundled with Parcel, making it easy to use and deploy.
 
