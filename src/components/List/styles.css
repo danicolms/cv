@@ -29,6 +29,10 @@
   align-items: center;
 }
 
-.list__value {
-  margin-left: 0.4em;
+.list__text-container {
+  margin-left: 0.6em;
+}
+
+.text-container__caption {
+  color: rgb(var(--grey));
 }
