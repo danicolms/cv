@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import {
   PiAtomDuotone,
   PiGraduationCapDuotone,
@@ -11,7 +11,7 @@ import { List, Title } from "../../components";
 const studies = [
   {
     key: "uneatlantico",
-    value: "Computer engineer",
+    value: "Computer engineering",
     url: "https://www.uneatlantico.es/escuela-politecnica-superior/estudios-grado-oficial-en-ingenieria-informatica",
     category: "UNEATLANTICO (2016-2020)",
     icon: <PiGraduationCapDuotone />,
