@@ -1,12 +1,13 @@
-import React from "react";
+import { Fragment } from "react";
+
 import Home from "./views/Home";
 
-console.log("💡 Running v2.0.0");
+console.log("💡 Running v2.0.2");
 
 export const App = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <Home />
-    </React.Fragment>
+    </Fragment>
   );
 };
